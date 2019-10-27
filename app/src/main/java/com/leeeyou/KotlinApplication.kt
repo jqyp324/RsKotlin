@@ -5,7 +5,6 @@ import android.content.Context
 import android.support.multidex.MultiDex
 import com.leeeyou.manager.timber.CrashReportingTree
 import com.leeeyou.service.ServiceFactory
-import com.tencent.bugly.Bugly
 import net.danlew.android.joda.JodaTimeAndroid
 import timber.log.Timber
 import timber.log.Timber.DebugTree
@@ -40,7 +39,7 @@ class KotlinApplication : Application() {
     }
 
     private fun initBugly() {
-        Bugly.init(this, "8f4e37e626", false)
+//        Bugly.init(this, "8f4e37e626", false)
     }
 
     private fun initJoda() {
